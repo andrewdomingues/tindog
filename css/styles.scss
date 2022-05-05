@@ -1,0 +1,145 @@
+$primary: #ff4c68;
+$primary2: #ef8172;
+$font-gray: #8f8f8f;
+body {
+  font-family: Montserrat;
+}
+h1 {
+  font-weight: 900;
+  font-size: 2.8em;
+  line-height: 1.5;
+  color: white;
+}
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+#title {
+  background-color: $primary;
+  // height: 550px;
+  // overflow: hidden;
+
+  nav.navbar {
+    padding: 0 0 4.5rem 0;
+    .navbar-brand {
+      font-family: Ubuntu;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .nav-item {
+      padding: 0 18px;
+      text-align: right;
+    }
+    .nav-link {
+      font-size: 1rem;
+      font-family: Montserrat;
+      font-weight: 500;
+    }
+  }
+  #iphone-mockup {
+    width: 20%;
+    transform: rotate(25deg);
+    right: 25%;
+    position: absolute;
+  }
+  .download-btn {
+    margin: 5% 3% 5% 0;
+  }
+  .container-fluid {
+    padding: 3% 15% 7%;
+  }
+}
+#features {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  .row.container-fluid{
+    padding: 0;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 5%;
+    h3 {
+      font-weight: bold;
+    }
+    p {
+      color: $font-gray;
+      font-weight: 600;
+    }
+    i {
+      color: $primary2;
+      margin-bottom: 1rem;
+      transition: 0.3s;
+    }
+    i:hover {
+      color: $primary;
+    }
+  }
+}
+#testimonials {
+  text-align: center;
+  background-color: $primary2;
+  color: #fff;
+  img {
+    border-radius: 50%;
+    width: 10%;
+    margin: 20px;
+  }
+  .carousel-item {
+    padding: 7% 15%;
+  }
+}
+#press {
+  background-color: $primary2;
+  text-align: center;
+  padding-bottom: 3%;
+  img {
+    width: 20%;
+    margin: 20px 20px 50px;
+  }
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+  .pricing-column{
+    padding: 3% 2%;
+  }
+}
+#cta{
+  background-color: $primary;
+  padding: 7%;
+  text-align: center;
+  button{
+    margin: 50px 20px 10px;
+  }
+}
+#footer{
+  padding: 2% 7%;
+  div *{
+    margin: 5px;
+  }
+  div a:nth-child(1){
+    color: #1A8CD8;
+  }
+  div a:nth-child(2){
+    color: #1877F2;
+  }
+  div a:nth-child(3){
+    color: purple;
+  }
+  div a:nth-child(4){
+    color: #000;
+  }
+}
+// Selectors Precedence Levels never forget it!!! I wast 30 min trying fix it, something not work.
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  section#title #iphone-mockup{
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+}
